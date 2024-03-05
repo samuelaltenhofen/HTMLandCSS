@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* altura do body em 100% do view high, altura maxima da tela */ 
+    box-sizing: border-box; /* faz com que os filhos do body nao extrapolem o body, pesquisar sobre box-sizing */
+    background-color: black;
+    color: #F6F6F6;
+
+}
+
+.destaque-titulo {
+
+    color: #22D4FD;
+}
+
+.apresentacao { /* pra conferir mais sobre pesquisar sobre flexbox */
+    margin: 10% 15%;
+    display: flex; /* formata tudo que esta em apresentacao em caixas flex */
+    align-items: center; /* alinha os itens da apresentacao em centro*/
+    justify-content: space-between;
+
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+}
